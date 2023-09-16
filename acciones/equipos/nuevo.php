@@ -23,7 +23,7 @@ if($cantidadJugadores>=1 && $cantidadJugadores<=5){
 }
 else {
     $resp->IsOk=false;
-    $resp->Mensaje= "El equipo posee [cantidadDeJugadoresIndicados] y debe poseer entre 1 y 5  jugadores";
+    $resp->Mensaje= "El equipo posee $cantidadJugadores y debe poseer entre 1 y 5  jugadores";
 }
 
 echo json_encode($resp);
